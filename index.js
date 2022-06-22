@@ -11,8 +11,7 @@ app.use(express.json());
 
 routes(app);
 
-/* Avviamo il server */
+/* Start server */
 app.listen(port_number, ()=>{
     utils.print_log(this_file_name,'Listen on http://localhost:' + port_number);
 });
-
