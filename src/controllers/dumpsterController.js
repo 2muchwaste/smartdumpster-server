@@ -43,16 +43,16 @@ const getData = (req, res) => {
 };
 
 const openDumpster = (req,res) => {
-    utils.print_log(this_file_name,"openDumpster requested");
+    utils.print_log(this_file_name,"openDumpster requested - open for " + getDumpsterData().openingSecondsDuration + " seconds");
     dumpsterIsBeingUsed = true;
-    const openingTimeDumpster = 10000;
+    //const openingTimeDumpster = 10000;
     simulateDumpsterOpening();
     myTimer = extendableTimeout(() => {
         utils.print_log(this_file_name,"Timer finished");
         simulateDumpsterClosing();
         // TODO: set new last weight of dumpster
         dumpsterIsBeingUsed = false;
-    }, openingTimeDumpster);
+    }, getDumpsterData().openingSecondsDuration*1000);
 
     res.json({ endingTime: myTimer.finishTime});
 }
