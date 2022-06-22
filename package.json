@@ -1,0 +1,23 @@
+{
+  "name": "code",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/2muchwaste/smartdumpster-server.git"
+  },
+  "author": "Angelo Tinti, Elia Marcantognini, Alessandro Tullio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/2muchwaste/smartdumpster-server/issues"
+  },
+  "homepage": "https://github.com/2muchwaste/smartdumpster-server#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "moment": "^2.29.3"
+  }
+}

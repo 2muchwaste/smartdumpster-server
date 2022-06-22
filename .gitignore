@@ -102,3 +102,9 @@ dist
 
 # TernJS port file
 .tern-port
+
+# File used for test
+prova*
+
+# WebStorm settings
+.idea/*

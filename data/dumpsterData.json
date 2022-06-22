@@ -1,0 +1,12 @@
+{
+  "__id": 0,
+  "type": "paper",
+  "latitude": 0,
+  "longitude": 0,
+  "address": "via Alessandro Manzoni",
+  "max-weight": 100,
+  "actual-weight": 21,
+  "filling-percentage": 0.21,
+  "available": true,
+  "area": "A"
+}
